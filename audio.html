@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartEdge TECH | Audio</title>
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+    
+    <header class="main-header">
+        <div class="logo">
+            <a href="hompage.html">SmartEdge <span>TECH</span></a>
+        </div>
+        <form class="search-bar">
+            <input type="text" placeholder="Search audio products...">
+            <button type="submit" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </form>
+        <nav class="header-nav">
+            <a href="hompage.html">Home</a>
+            <a href="audio.html">Audio</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    
+    <div class="page-layout">
+
+        
+        <aside class="v-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li class="active"><a>All Audio</a></li>
+                <li><a>Headphones</a></li>
+                <li><a>Earbuds</a></li>
+                <li><a>Speakers</a></li>
+                <li><a>Soundbars</a></li>
+                <li><a>Microphones</a></li>
+                <li><a>DACs & Amps</a></li>
+            </ul>
+
+            <div class="v-divider"></div>
+
+            <h3>Brands</h3>
+            <ul>
+                <li><a>Sony</a></li>
+                <li><a>Bose</a></li>
+                <li><a>JBL</a></li>
+                <li><a>Sennheiser</a></li>
+                <li><a>Apple</a></li>
+                <li><a>Audio-Technica</a></li>
+            </ul>
+
+            <div class="v-divider"></div>
+
+            <h3>Price Range</h3>
+            <ul>
+                <li><a>Under KES 5,000</a></li>
+                <li><a>KES 5,000 – 20,000</a></li>
+                <li><a>KES 20,000 – 50,000</a></li>
+                <li><a>Above KES 50,000</a></li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+
+            
+            <div class="breadcrumb">
+                <a href="hompage.html">Home</a>
+                <span>/</span>
+                <span class="bc-current">Audio</span>
+            </div>
+
+            
+            <div class="page-title">
+                <h1>Audio Products</h1>
+                <p>Premium sound for every listener — headphones, speakers, earbuds and more.</p>
+            </div>
+
+            
+            <div class="product-grid">
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Sony WH-1000XM5">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Headphones</span>
+                        <p class="card-name">Sony WH-1000XM5</p>
+                        <p class="card-desc">Industry-leading noise cancellation, 30-hour battery, and crystal-clear call quality via multipoint Bluetooth.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 38,500</span>
+                            <span class="card-old">KES 48,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500" alt="AirPods Pro">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Earbuds</span>
+                        <p class="card-name">Apple AirPods Pro (3rd Gen)</p>
+                        <p class="card-desc">Adaptive Transparency, personalised Spatial Audio, and up to 30 hours total battery with the charging case.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 29,500</span>
+                            <span class="card-old">KES 35,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500" alt="JBL Xtreme 3">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Speakers</span>
+                        <p class="card-name">JBL Xtreme 3</p>
+                        <p class="card-desc">100W stereo with deep bass, IP67 waterproof rating, 15-hour battery life, and JBL PartyBoost connectivity.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 22,000</span>
+                            <span class="card-old">KES 28,500</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Bose QC45">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Headphones</span>
+                        <p class="card-name">Bose QuietComfort 45</p>
+                        <p class="card-desc">Quiet Mode and Aware Mode switching, 24-hour battery, lightweight build, and Bose TriPort acoustic architecture.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 34,000</span>
+                            <span class="card-old">KES 40,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500" alt="Sennheiser HD 560S">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Headphones</span>
+                        <p class="card-name">Sennheiser HD 560S</p>
+                        <p class="card-desc">Audiophile open-back with neutral tuning, wide soundstage, 120Ω impedance, and an ultra-light 240g frame.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 18,000</span>
+                            <span class="card-old">KES 22,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1520170350707-b2da59970118?w=500" alt="Audio-Technica AT2020">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Microphones</span>
+                        <p class="card-name">Audio-Technica AT2020USB-X</p>
+                        <p class="card-desc">Cardioid condenser USB mic with side-address design, 24-bit/192kHz audio, and built-in headphone monitoring.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 16,500</span>
+                            <span class="card-old">KES 20,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1631176093617-6f2a2d72b222?w=500" alt="Samsung Galaxy Buds3 Pro">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Earbuds</span>
+                        <p class="card-name">Samsung Galaxy Buds3 Pro</p>
+                        <p class="card-desc">Intelligent ANC, 360° audio with head tracking, a 6-mic system for calls, and 30h total battery with case.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 24,500</span>
+                            <span class="card-old">KES 30,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500" alt="Bose SoundLink Flex">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Speakers</span>
+                        <p class="card-name">Bose SoundLink Flex</p>
+                        <p class="card-desc">Waterproof and floatable, PositionIQ sound technology, 12-hour battery, and a built-in speakerphone.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 14,500</span>
+                            <span class="card-old">KES 18,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500" alt="Samsung Soundbar">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Soundbars</span>
+                        <p class="card-name">Samsung HW-Q600C Soundbar</p>
+                        <p class="card-desc">3.1.2ch Dolby Atmos and DTS:X, wireless subwoofer, SpaceFit Sound, and seamless Samsung TV pairing.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 58,000</span>
+                            <span class="card-old">KES 70,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </main>
+    </div>
+    
+
+    
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="61121411110e131521120c00131504050604150402094f020e0c">[email&#160;protected]</a></p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>New Arrivals</p>
+                <p>Popular Items</p>
+                <p>Brands</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <span>Twitter</span>
+                    <span>Instagram</span>
+<script src="nav.js"></script>

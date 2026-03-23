@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartEdge TECH | About</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        .about-hero {
+            padding: 52px 5% 32px;
+            border-bottom: 1px solid var(--border);
+        }
+        .about-hero h1 {
+            font-size: 1.55rem;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+        }
+        .about-hero p {
+            color: var(--text-dim);
+            font-size: 0.88rem;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+        .director-section {
+            padding: 40px 5% 64px;
+        }
+        .director-section h2 {
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        .director-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .director-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 22px 20px;
+            text-decoration: none;
+            display: block;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .director-card:hover {
+            border-color: rgba(46,184,194,0.22);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+        }
+        .director-initials {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--bg-mid);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.82rem;
+            color: var(--accent);
+            margin-bottom: 14px;
+            letter-spacing: 1px;
+        }
+        .director-name {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #d0d0d0;
+            margin-bottom: 4px;
+        }
+        .director-role {
+            font-size: 0.72rem;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+        .director-link {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .director-card:hover .director-link {
+            color: var(--text-main);
+            border-color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="hompage.html">SmartEdge <span>TECH</span></a>
+        </div>
+        <nav class="header-nav">
+            <a href="hompage.html">Home</a>
+            <a href="audio.html">Audio</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html" class="nav-active">About</a>
+            <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <div class="about-hero">
+        <h1>About SmartEdge</h1>
+        <p>Founded in 2026, SmartEdge Electronics is a proudly Kenyan company built on trust, innovation, and a genuine belief that great technology should be accessible to everyone. Meet the team behind the company.</p>
+    </div>
+
+    <div class="director-section">
+        <h2>Board of Directors</h2>
+        <div class="director-grid">
+
+            <a href="kenneth.html" class="director-card">
+                <div class="director-initials">KM</div>
+                <div class="director-name">Kenneth Muchui</div>
+                <div class="director-role">Chief Executive Officer</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="rume.html" class="director-card">
+                <div class="director-initials">RA</div>
+                <div class="director-name">Rume Arnold Sam</div>
+                <div class="director-role">Director of Operations</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="vivian.html" class="director-card">
+                <div class="director-initials">VA</div>
+                <div class="director-name">Vivian Akinyi</div>
+                <div class="director-role">Director of Marketing</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="raymond.html" class="director-card">
+                <div class="director-initials">MR</div>
+                <div class="director-name">Muhoro Raymond</div>
+                <div class="director-role">Director of Technology</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="david.html" class="director-card">
+                <div class="director-initials">DO</div>
+                <div class="director-name">David Omondi</div>
+                <div class="director-role">Director of Finance</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="omega.html" class="director-card">
+                <div class="director-initials">OC</div>
+                <div class="director-name">Omega Chepkirui</div>
+                <div class="director-role">Director of Customer Experience</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="hezekiah.html" class="director-card">
+                <div class="director-initials">HG</div>
+                <div class="director-name">Hezekiah Gibril</div>
+                <div class="director-role">Director of Product</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="faith.html" class="director-card">
+                <div class="director-initials">FC</div>
+                <div class="director-name">Faith Chepkorir</div>
+                <div class="director-role">Director of Legal and Compliance</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="mariga.html" class="director-card">
+                <div class="director-initials">MN</div>
+                <div class="director-name">Mariga Nobert</div>
+                <div class="director-role">Director of Partnerships</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+            <a href="gitonga.html" class="director-card">
+                <div class="director-initials">GP</div>
+                <div class="director-name">Gitonga Paul</div>
+                <div class="director-role">Director of Logistics</div>
+                <span class="director-link">View Profile</span>
+            </a>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: support@smartedgetech.com</p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>New Arrivals</p>
+                <p>Popular Items</p>
+                <p>Brands</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <span>Twitter</span>
+                    <span>Instagram</span>
+                    <span>Facebook</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+</body>
+</html>

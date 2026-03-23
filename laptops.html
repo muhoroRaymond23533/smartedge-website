@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartEdge TECH | Laptops</title>
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+    
+    <header class="main-header">
+        <div class="logo">
+            <a href="hompage.html">SmartEdge <span>TECH</span></a>
+        </div>
+        <form class="search-bar">
+            <input type="text" placeholder="Search laptops...">
+            <button type="submit" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </form>
+        <nav class="header-nav">
+            <a href="hompage.html">Home</a>
+            <a href="audio.html">Audio</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    
+    <div class="page-layout">
+
+        
+        <aside class="v-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li class="active"><a>All Laptops</a></li>
+                <li><a>Ultrabooks</a></li>
+                <li><a>Gaming Laptops</a></li>
+                <li><a>Business Laptops</a></li>
+                <li><a>MacBooks</a></li>
+                <li><a>Chromebooks</a></li>
+                <li><a>2-in-1 Laptops</a></li>
+            </ul>
+
+            <div class="v-divider"></div>
+
+            <h3>Brands</h3>
+            <ul>
+                <li><a>Apple</a></li>
+                <li><a>Dell</a></li>
+                <li><a>HP</a></li>
+                <li><a>Lenovo</a></li>
+                <li><a>Asus</a></li>
+                <li><a>Acer</a></li>
+                <li><a>Microsoft</a></li>
+            </ul>
+
+            <div class="v-divider"></div>
+
+            <h3>Price Range</h3>
+            <ul>
+                <li><a>Under KES 40,000</a></li>
+                <li><a>KES 40,000 – 80,000</a></li>
+                <li><a>KES 80,000 – 150,000</a></li>
+                <li><a>Above KES 150,000</a></li>
+            </ul>
+
+            <div class="v-divider"></div>
+
+            <h3>RAM</h3>
+            <ul>
+                <li><a>8 GB</a></li>
+                <li><a>16 GB</a></li>
+                <li><a>32 GB</a></li>
+                <li><a>64 GB & above</a></li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+
+            
+            <div class="breadcrumb">
+                <a href="hompage.html">Home</a>
+                <span>/</span>
+                <span class="bc-current">Laptops</span>
+            </div>
+
+            
+            <div class="page-title">
+                <h1>Laptops</h1>
+                <p>Powerful machines for work, creativity, and gaming — from ultrabooks to full rigs.</p>
+            </div>
+
+            
+            <div class="product-grid">
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80" alt="MacBook Pro">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">MacBooks</span>
+                        <p class="card-name">Apple MacBook Pro 14" M3 Pro</p>
+                        <p class="card-desc">M3 Pro chip with 12-core CPU, 18GB unified memory, 18-hour battery, and a stunning Liquid Retina XDR display.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 245,000</span>
+                            <span class="card-old">KES 280,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=500&q=80" alt="Dell XPS 15">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Ultrabooks</span>
+                        <p class="card-name">Dell XPS 15 (2024)</p>
+                        <p class="card-desc">Intel Core Ultra 9, 32GB DDR5 RAM, RTX 4060, 15.6" OLED 3.5K touch display, and 86Whr battery.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 198,000</span>
+                            <span class="card-old">KES 230,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=500&q=80" alt="ASUS ROG Strix">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Gaming Laptops</span>
+                        <p class="card-name">ASUS ROG Strix G16</p>
+                        <p class="card-desc">Intel Core i9-14900HX, RTX 4070, 16GB DDR5, 16" QHD 240Hz display, and MUX Switch for pure GPU power.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 185,000</span>
+                            <span class="card-old">KES 220,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=500&q=80" alt="Lenovo ThinkPad X1 Carbon">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Business Laptops</span>
+                        <p class="card-name">Lenovo ThinkPad X1 Carbon Gen 12</p>
+                        <p class="card-desc">Intel Core Ultra 7, 16GB LPDDR5, 1TB SSD, 14" IPS anti-glare display, and legendary ThinkPad keyboard.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 168,000</span>
+                            <span class="card-old">KES 192,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=500&q=80" alt="HP Spectre x360">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">2-in-1 Laptops</span>
+                        <p class="card-name">HP Spectre x360 14"</p>
+                        <p class="card-desc">Intel Core Ultra 7, 2.8K OLED touch display, 360° hinge, included stylus, and 17-hour battery life.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 138,000</span>
+                            <span class="card-old">KES 158,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=500&q=80" alt="MacBook Air M3">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">MacBooks</span>
+                        <p class="card-name">Apple MacBook Air 13" M3</p>
+                        <p class="card-desc">M3 chip, 8GB unified memory, fanless design, 15-hour battery, and a 13.6" Liquid Retina display. Under 1.24kg.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 148,000</span>
+                            <span class="card-old">KES 165,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=500&q=80" alt="Acer Nitro V">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Gaming Laptops</span>
+                        <p class="card-name">Acer Nitro V 15 (2024)</p>
+                        <p class="card-desc">Intel Core i5-13420H, RTX 4050, 16GB DDR5, 15.6" FHD 144Hz IPS display — great performance at its price.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 72,000</span>
+                            <span class="card-old">KES 90,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1611186871525-7ea7ab1ec1f7?auto=format&fit=crop&w=500&q=80" alt="Microsoft Surface Laptop 6">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Ultrabooks</span>
+                        <p class="card-name">Microsoft Surface Laptop 6</p>
+                        <p class="card-desc">Intel Core Ultra 5, 16GB RAM, 13.5" PixelSense display, Copilot+ PC features, and up to 19-hour battery.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 128,000</span>
+                            <span class="card-old">KES 148,000</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=500&q=80" alt="HP 255 G10">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Business Laptops</span>
+                        <p class="card-name">HP 255 G10</p>
+                        <p class="card-desc">AMD Ryzen 5 7520U, 8GB DDR5, 512GB SSD, 15.6" FHD display — a reliable everyday workhorse at a great price.</p>
+                        <div class="card-pricing">
+                            <span class="card-price">KES 38,000</span>
+                            <span class="card-old">KES 50,500</span>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </main>
+    </div>
+    
+
+    
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f784828787988583b7849a968583929390928392949fd994989a">[email&#160;protected]</a></p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>New Arrivals</p>
+                <p>Popular Items</p>
+                <p>Brands</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <span>Twitter</span>
+                    <span>Instagram</span>
+<script src="nav.js"></script>

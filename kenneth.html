@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kenneth Muchui | SmartEdge</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        .profile-page {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 5% 80px;
+        }
+        .profile-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-bottom: 36px;
+            transition: color 0.2s;
+        }
+        .profile-back:hover { color: var(--text-main); }
+        .profile-back::before { content: "\2190"; font-size: 0.9rem; }
+        .profile-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .profile-name {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-bottom: 6px;
+        }
+        .profile-title {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 28px;
+        }
+        .profile-divider {
+            height: 1px;
+            background: var(--border);
+            margin-bottom: 28px;
+        }
+        .profile-bio p {
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="../hompage.html">SmartEdge <span>TECH</span></a>
+        </div>
+        <nav class="header-nav">
+            <a href="../hompage.html">Home</a>
+            <a href="../audio.html">Audio</a>
+            <a href="../laptops.html">Laptops</a>
+            <a href="../smartphones.html">Smartphones</a>
+            <a href="../accessories.html">Accessories</a>
+            <a href="../about.html" class="nav-active">About</a>
+            <a href="../cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <div class="profile-page">
+        <a href="../about.html" class="profile-back">Board of Directors</a>
+        <div class="profile-avatar">KM</div>
+        <h1 class="profile-name">Kenneth Muchui</h1>
+        <div class="profile-title">Chief Executive Officer</div>
+        <div class="profile-divider"></div>
+        <div class="profile-bio">
+            <p>Kenneth Muchui is a co-founder and the Chief Executive Officer of SmartEdge Electronics. With a background in business development and technology management, he has been instrumental in shaping the company's vision since its founding in 2026. Kenneth leads the overall strategy and direction of the business, ensuring that SmartEdge remains competitive and customer-focused in the Kenyan electronics market.</p>
+            <p>Outside of his role at SmartEdge, Kenneth is passionate about entrepreneurship and mentoring young business leaders across East Africa. He holds a degree in Business Information Technology and has previously worked with several technology startups in Nairobi before co-founding SmartEdge.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: support@smartedgetech.com</p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>New Arrivals</p>
+                <p>Popular Items</p>
+                <p>Brands</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <span>Twitter</span>
+                    <span>Instagram</span>
+                    <span>Facebook</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../nav.js"></script>
+</body>
+</html>

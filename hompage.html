@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartEdge TECH | Premium Store</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a>SmartEdge <span>TECH</span></a>
+        </div>
+        <form class="search-bar">
+            <input type="text" placeholder="Search gadgets...">
+            <button type="submit" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </form>
+        <nav class="header-nav">
+            <a href="hompage.html" class="nav-active">Home</a>
+            <a href="audio.html">Audio</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a>
+        </nav>
+    </header>
+
+    <audio id="hoverSound" preload="auto">
+        <source src="hover.mp3" type="audio/mpeg">
+    </audio>
+
+    <nav class="sidebar">
+        <h3>BROWSE BY CATEGORY</h3>
+        <ul>
+            <li class="active"><a>Audio</a></li>
+            <li><a>Laptops</a></li>
+            <li><a>Smartphones</a></li>
+            <li><a>Wearables</a></li>
+            <li><a>Accessories</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-layout">
+        <div class="content-right">
+
+            
+            <section class="hero">
+                <div class="hero-bg"></div>
+
+                <div class="slides" id="slidesTrack">
+                    <div class="slide slide-1">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80" alt="Laptop">
+                    </div>
+                    <div class="slide slide-2">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80" alt="Headphones">
+                    </div>
+                    <div class="slide slide-3">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Smartphone">
+                    </div>
+                </div>
+
+                
+                <div class="hero-text">
+                    <div class="hero-label" id="heroLabel">New Release</div>
+                    <h1 id="heroTitle">AeroDrive Pro</h1>
+                    <p id="heroSub">Peak performance engineered.</p>
+                    <button>LEARN MORE</button>
+                </div>
+
+                
+                <button class="carousel-prev" id="prevBtn">&#8592;</button>
+                <button class="carousel-next" id="nextBtn">&#8594;</button>
+
+                
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+
+                
+                <div class="slide-counter"><span id="slideNum">01</span> / 03</div>
+            </section>
+
+            
+            <section class="brand-section">
+                <div class="brand-container">
+                    <h2>Redefining Electronics in Kenya</h2>
+                    <p class="brand-intro">
+                        We are a proudly Kenyan electronics company built on trust, innovation, and customer-first thinking.
+                        We don't just sell devices — we craft digital experiences designed around you.
+                    </p>
+                    <div class="brand-features">
+                        <div class="feature">
+                            <h3>Interactive Shopping Experience</h3>
+                            <p>
+                                Our platform is designed for seamless discovery, intuitive browsing, and effortless purchasing.
+                                Every interaction is optimized to make your journey smooth, engaging, and satisfying.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <h3>AI-Powered Recommendations</h3>
+                            <p>
+                                Using intelligent recommendation systems, we analyze preferences and behavior patterns to suggest
+                                products tailored specifically to your needs — saving time while enhancing decision confidence.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <h3>Customer Support That Cares</h3>
+                            <p>
+                                From product guidance to post-purchase assistance, our dedicated support team ensures
+                                reliability, transparency, and peace of mind at every step.
+                            </p>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="popular">
+                <h2>POPULAR ITEMS</h2>
+                <div class="card-grid">
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Audio</span>
+                            <p class="card-name">SoundSphere X Pro</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 18,500</span>
+                                <span class="card-old">KES 22,500</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=400" alt="Watch">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Wearables</span>
+                            <p class="card-name">OrbitWatch Ultra</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 32,000</span>
+                                <span class="card-old">KES 38,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400" alt="Keyboard">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Accessories</span>
+                            <p class="card-name">MechCore RGB Keyboard</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 9,800</span>
+                                <span class="card-old">KES 12,500</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=400&q=80" alt="Speaker">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Audio</span>
+                            <p class="card-name">BassBox 360 Speaker</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 14,400</span>
+                                <span class="card-old">KES 18,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=400&q=80" alt="Smartwatch">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Wearables</span>
+                            <p class="card-name">PulseTrack Pro Watch</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 28,000</span>
+                                <span class="card-old">KES 33,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=400&q=80" alt="Laptop">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Laptops</span>
+                            <p class="card-name">AeroDrive Pro 14</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 145,000</span>
+                                <span class="card-old">KES 165,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=400&q=80" alt="Phone">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Smartphones</span>
+                            <p class="card-name">NovaPulse S9</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 85,000</span>
+                                <span class="card-old">KES 100,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=400&q=80" alt="Laptop">
+                        </div>
+                        <div class="card-info">
+                            <span class="card-cat">Laptops</span>
+                            <p class="card-name">SlimEdge Ultra 15</p>
+                            <div class="card-pricing">
+                                <span class="card-price">KES 112,000</span>
+                                <span class="card-old">KES 135,000</span>
+                            </div>
+                        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a>New Arrivals</a></li>
+                    <li><a>Best Sellers</a></li>
+                    <li><a>Discounts</a></li>
+                    <li><a>Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="info-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a>Help Center</a></li>
+                    <li><a>Shipping Info</a></li>
+                    <li><a>Returns</a></li>
+                    <li><a>Track Order</a></li>
+                </ul>
+            </div>
+            <div class="info-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a>About Us</a></li>
+                    <li><a>Careers</a></li>
+                    <li><a>Press</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+            <div class="info-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Terms of Service</a></li>
+                    <li><a>Cookies Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d5e585d5d425f596d5e404c5f5948494a4859484e45034e4240">[email&#160;protected]</a></p>
+                <p>Phone: +254 700 000 000</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>New Arrivals</p>
+                <p>Popular Items</p>
+                <p>Brands</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <span>Twitter</span>
+                    <span>Instagram</span>
+                    <span>Facebook</span>
+<script src="script.js"></script>
